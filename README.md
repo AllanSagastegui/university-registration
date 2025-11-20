@@ -4,14 +4,14 @@
 
 ## Table of Contents
 
-1.  [Project Manifesto](https://www.google.com/search?q=%231-project-manifesto)
-2.  [Guiding Principles](https://www.google.com/search?q=%232-guiding-principles)
-3.  [Architectural Deep Dive](https://www.google.com/search?q=%233-architectural-deep-dive)
-4.  [Technology Stack](https://www.google.com/search?q=%234-technology-stack)
-5.  [API Reference](https://www.google.com/search?q=%235-api-reference)
-6.  [Database Schema](https://www.google.com/search?q=%236-database-schema)
-7.  [Getting Started](https://www.google.com/search?q=%237-getting-started)
-8.  [Author](https://www.google.com/search?q=%238-author)
+1.  [Project Manifesto](#1-project-manifesto)
+2.  [Guiding Principles](#2-guiding-principles)
+3.  [Architectural Deep Dive](#3-architectural-deep-dive)
+4.  [Technology Stack](#4-technology-stack)
+5.  [API Reference](#5-api-reference)
+6.  [Database Schema](#6-database-schema)
+7.  [Getting Started](#7-getting-started)
+8.  [Author](#8-author)
 
 -----
 
@@ -208,7 +208,6 @@ erDiagram
         string dni UK
         string email UK
         string name
-        ...
     }
     COURSE {
         uuid id PK
