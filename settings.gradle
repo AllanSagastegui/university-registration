@@ -1,0 +1,33 @@
+pluginManagement {
+    repositories {
+        //mavenLocal()
+        //maven { url = '...' }
+        gradlePluginPortal()
+    }
+}
+
+buildCache {
+    local {
+        directory = new File(rootDir, 'build-cache')
+    }
+}
+
+rootProject.name = 'university-registration'
+
+include ':run'
+project(':run').projectDir = file('./run')
+
+include ':model'
+project(':model').projectDir = file('./domain/model')
+
+include ':port'
+project(':port').projectDir = file('./domain/port')
+
+include ':use-case'
+project(':use-case').projectDir = file('./application/use-case')
+
+include ':persistence'
+project(':persistence').projectDir = file('./infrastructure/driven-adapters/persistence')
+
+include ':reactive-web'
+project(':reactive-web').projectDir = file('./infrastructure/entry-points/reactive-web')
